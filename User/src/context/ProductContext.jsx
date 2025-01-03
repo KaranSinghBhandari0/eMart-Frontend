@@ -25,6 +25,7 @@ export const ProductProvider = ({ children }) => {
     // get Products by id
     const getProductDetails = async (id) => {
         try {
+            setProduct(null);
             const res = await axiosInstance.get(`/product/${id}`);
             setProduct(res.data.product);
         } catch(error) {
