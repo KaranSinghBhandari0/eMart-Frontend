@@ -19,7 +19,7 @@ export default function ShowProduct() {
 
     if(!product) {
         return (
-            <div className='h-screen w-full bg-blue-100'>
+            <div className='h-screen w-full'>
                 Loading...
             </div>
         )

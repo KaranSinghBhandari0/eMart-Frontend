@@ -20,7 +20,7 @@ export default function Navbar() {
           <Link to='/' className='text-white hover:bg-slate-600 px-2 py-1 rounded'>Home</Link>
           <Link to='/cart' className='text-white hover:bg-slate-600 px-2 py-1 rounded'>Cart</Link>
           <button className='text-white hover:bg-slate-600 px-2 py-1 rounded' 
-          onClick={() => window.open(`${import.meta.env.VITE_ADMIN_URL}`, '_blank', 'noopener,noreferrer')}>
+          onClick={() => window.open('https://emart-admin-by-karan.vercel.app', '_blank', 'noopener,noreferrer')}>
             Become a Seller
           </button>
         </div>
