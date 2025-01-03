@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 
+import Spinner from '../components/Spinner';
+
 import { ProductContext } from "../context/ProductContext";
 import { PaymentContext } from "../context/PaymentContext";
 import { CartContext } from '../context/CartContext';
@@ -19,8 +21,9 @@ export default function ShowProduct() {
 
     if(!product) {
         return (
-            <div className='h-screen w-full'>
-                Loading...
+            <div className='h-[80vh] w-full flex flex-col items-center justify-center'>
+                <Spinner />
+                <p>Loading...</p>
             </div>
         )
     }
